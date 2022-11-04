@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+}
+html{
+    font-size: 62.5%;
+}
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.background{
+    background-color: var(--purple-bg);
+    border-bottom: 0.3rem solid var(--green);
+}
+nav{
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content:space-between;
+    gap: 2.5rem;
+    max-width: 117rem;
+    width: 90%;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    all: unset;
+}
+.tag-search{
+    display: flex;
+    justify-content: center;
+}
+input{
+    border-radius: 4rem;
+    padding: 1.2rem;
+    border-radius: 4px 0px 0px 4px;
+    background-color: var(--dark-bg);
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    color: var(--white);
+}
+
+button{
+    background-color: var(--button-bg);
+    width: 3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    background-color: var(--button-bg);
+}
+.navegation{
+    margin-left: 3rem;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'poppins';
+    font-size: 16px;
+}
+.link{
+    text-decoration: none;
+    color: #e5ff00;
+    font-family: 'poppins';
+    font-size: 1.7rem;
+}
+
+.hero{
+    max-width: 117rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5.4rem;
+    margin-bottom: 5.4rem;
+}
+@media (min-width:768px){
+    .hero{
+        display: flex;
+        gap: 30px;
+    }
+}
+.hero h1{
+    color: var(--button-bg);
+}
+h1{
+    font-family: 'poppins';
+    font-style: normal;
+    font-size: 32px;
+    display: flex;
+    padding-bottom: 1.2rem;
+    width: 80%;
+}
+
+p{
+    font-family: 'roboto';
+    font-style: normal;
+    font-size: 17px;
+    display: flex;
+    padding-bottom: 1.2rem;
+    width: 75%;
+}
+.white{
+    color: var(--white);
+}
+
+.img-font{
+    width: max(45%, 48rem)
+}
